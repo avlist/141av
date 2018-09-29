@@ -1,0 +1,19 @@
+{
+  "short_name": "141AV",
+  "name": "141AV",
+  "description": "141AV 網站導航，嚴選各大熱門成人網站，每天更新。",
+  "icons": [{
+    "src": "img/logo-256.png",
+    "sizes": "256x256",
+    "type": "image/png"
+  }, {
+    "src": "images/logo-512.png",
+    "sizes": "512x512",
+    "type": "image/png"
+  }],
+  "start_url": "index.html",
+  "display": "standalone",
+  "theme_color": "#badb54",
+  "background_color": "#ffffff",
+  "orientation": "portrait"
+}
