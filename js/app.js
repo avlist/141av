@@ -1,4 +1,4 @@
-$.get('db.json', function(data) {
+$.get('/db.json', function(data) {
   $.each(data.type, function(index, value) {
     html = '<div class="col-xl-3"><div class="card"><div class="card-body"><h5 class="card-title"><strong>' + value.name + '</strong></h5><ol class="scroll">';
     $.each(value.list, function(index, value) {
