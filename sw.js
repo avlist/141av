@@ -5,6 +5,7 @@ self.addEventListener('install', e => {
     caches.open(cacheName).then(cache => {
       return cache.addAll([
         `/`,
+        `/?utm_source=homescreen`,
         `/db.json`,
         `images/background.jpg`,
         `/styles/main.css`,
