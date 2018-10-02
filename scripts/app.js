@@ -8,7 +8,7 @@ $.get('/db.json', function(data) {
       }
       html += '<a href="' + value.url + '" data-toggle="tooltip" data-placement="bottom" title="' + value.description + '" target="_blank" rel="noopener">' + value.name + '</a>';
       if(value.feature === true) {
-        html += '&nbsp;<span class="badge badge-pill badge-warning">💎AD</span>';
+        html += '<span class="badge badge-pill badge-warning">💎AD</span>';
       }
       html += '</li>';
     });
