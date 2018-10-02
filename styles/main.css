@@ -5,6 +5,8 @@ body {
   background-image: url(/../images/background.jpg);
   background-repeat: no-repeat;
   background-position-x: center;
+  height: 100%;
+  width: 100%;
   position: fixed;
 }
 a {
