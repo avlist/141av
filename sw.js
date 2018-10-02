@@ -7,7 +7,7 @@ self.addEventListener('install', e => {
         `/`,
         `/?utm_source=homescreen`,
         `/db.json`,
-        `images/background.jpg`,
+        `/images/background.jpg`,
         `/styles/main.css`,
         `/scripts/app.js`,
         `https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css`,
