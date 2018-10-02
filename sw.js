@@ -1,11 +1,10 @@
-const version = "0.1.1";
+const version = "0.1.2";
 const cacheName = `141av-${version}`;
 self.addEventListener('install', e => {
   e.waitUntil(
     caches.open(cacheName).then(cache => {
       return cache.addAll([
         `/`,
-        `/index.html`,
         `/db.json`,
         `images/background.jpg`,
         `/styles/main.css`,
