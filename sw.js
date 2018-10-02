@@ -1,4 +1,4 @@
-const version = "0.1.0";
+const version = "0.1.1";
 const cacheName = `141av-${version}`;
 self.addEventListener('install', e => {
   e.waitUntil(
