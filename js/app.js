@@ -19,10 +19,13 @@ $.get('/db.json', function(data) {
 });
 
 if('serviceWorker' in navigator) {
-  console.log("Will the service worker register?");
-  navigator.serviceWorker.register('service-worker.js').then(function(reg) {
-    console.log("Yes, it did.");
-  }).catch(function(err) {
-    console.log("No it didn't. This happened: ", err)
+  window.addEventListener('load', function() {
+    navigator.serviceWorker.register('/service-worker.js').then(function(registration) {
+      // Registration was successful
+      //console.log('ServiceWorker registration successful with scope: ', registration.scope);
+    }).catch(function(err) {
+      // registration failed :(
+      //console.log('ServiceWorker registration failed: ', err);
+    });
   });
 }
