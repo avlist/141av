@@ -17,3 +17,10 @@ $.get('/db.json', function(data) {
   });
   $('[data-toggle="tooltip"]').tooltip();
 });
+
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/sw.js').then(function(registration) {
+  }).catch(function(err) {
+    console.log('ServiceWorker registration failed: ', err);
+  });
+}
