@@ -4,7 +4,7 @@ $.get('/db.json', function(data) {
     $.each(value.list, function(index, value) {
       html += '<li class="card-text">';
       if(value.favicon) {
-        html += '<img src="' + value.favicon + '" height="16" width="16">';
+        html += '<img src="' + value.favicon + '" alt="' + value.name + '" height="16" width="16">';
       }
       html += '<a href="' + value.url + '" data-toggle="tooltip" data-placement="bottom" title="' + value.description + '" target="_blank">' + value.name + '</a>';
       if(value.feature === true) {
