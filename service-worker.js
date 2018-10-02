@@ -1,6 +1,7 @@
 var CACHE_NAME = '141av-cache-v1';
 var urlsToCache = [
   '/',
+  '/db.json',
   '/favicon.ico',
   '/css/style.css',
   '/js/app.js',
