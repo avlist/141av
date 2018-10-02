@@ -37,3 +37,6 @@ ol {
 li.card-text img {
   margin-right: 3px;
 }
+li.card-text span {
+  margin-left: 3px;
+}
