@@ -6,6 +6,8 @@ self.addEventListener('install', e => {
       return cache.addAll([
         `/`,
         `/index.html`,
+        `/db.json`,
+        `images/background.jpg`,
         `/styles/main.css`,
         `/scripts/app.js`,
         `https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css`,
