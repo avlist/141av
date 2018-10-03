@@ -18,6 +18,8 @@ $.get('/db.json', function(data) {
   $('[data-toggle="tooltip"]').tooltip();
 });
 
+$('.row').append('<div class="col-xl-12">&copy; 141AV</div>');
+
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('/sw.js').then(function(registration) {
   }).catch(function(err) {
