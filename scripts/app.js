@@ -1,7 +1,7 @@
 $.get('/db.json', function(data) {
   $.each(data.type, function(index, value) {
     if(value.html) {
-      html = '<div class="col-xl-3">' + value.html + '</div>';
+      html = '<div class="col-xl-' + value.size + '">' + value.html + '</div>';
     } else {
       html = '<div class="col-xl-3"><div class="card"><div class="card-body"><h5 class="card-title"><strong>' + value.name + '</strong></h5><ol class="scroll">';
       $.each(value.list, function(index, value) {
