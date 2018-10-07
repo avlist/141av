@@ -20,7 +20,7 @@ $.get('/db.json', function(data) {
     $('.row').append(html);
   });
   $('[data-toggle="tooltip"]').tooltip();
-  $('.row').append('<div class="col-xl-12 footer">&copy; 141AV</div>');
+  $('.row').append('<div class="col-xl-12 footer">&copy; <a href="https://141av.cf/" target="_blank" rel="noopener">141AV</a>. All rights reserved.</div>');
 });
 
 if ('serviceWorker' in navigator) {
