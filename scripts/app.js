@@ -23,9 +23,12 @@ $.get('/db.json', function(data) {
   $('.row').append('<div class="col-xl-12 footer">&copy; <a href="https://141av.cf/" target="_blank" rel="noopener">141AV</a>. All rights reserved.</div>');
 });
 
-if ('serviceWorker' in navigator) {
+if('serviceWorker' in navigator) {
   navigator.serviceWorker.register('/sw.js').then(function(registration) {
-  }).catch(function(err) {
-    console.log('ServiceWorker registration failed: ', err);
+    console.log('Service worker registration succeeded:', registration);
+  }, /*catch*/ function(error) {
+    console.log('ServiceWorker registration failed:', error);
   });
+} else {
+  console.log('Service workers are not supported.');
 }
