@@ -21,6 +21,9 @@ $.get('/db.json', function(data) {
   });
   $('[data-toggle="tooltip"]').tooltip();
   $('.row').append('<div class="col-xl-12 footer">&copy; <a href="https://141av.cf/" target="_blank" rel="noopener">141AV</a>. All rights reserved.</div>');
+}).fail(function() {
+  html = '<div class="col-xl-12">Error establishing a database connection</div>';
+  $('.row').append(html);
 });
 
 if('serviceWorker' in navigator) {
