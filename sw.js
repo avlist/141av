@@ -1,4 +1,4 @@
-const version = "0.1.3";
+const version = "0.1.4";
 const cacheName = `141av-${version}`;
 self.addEventListener('install', e => {
   e.waitUntil(
@@ -10,10 +10,10 @@ self.addEventListener('install', e => {
         `/images/background.jpg`,
         `/styles/main.css`,
         `/scripts/app.js`,
-        `https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css`,
-        `https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js`,
-        `https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js`,
-        `https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js`
+        `https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css`,
+        `https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js`,
+        `https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js`,
+        `https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js`
       ])
           .then(() => self.skipWaiting());
     })
